@@ -1,12 +1,12 @@
 {
   "canisters": {
-    "test-sql": {
+    "crud": {
       "build": [
         "cargo build --target wasm32-unknown-unknown --release",
-        "ic-wasm target/wasm32-unknown-unknown/release/test_sql.wasm -o target/wasm32-unknown-unknown/release/test_sql_opt.wasm shrink"
+        "ic-wasm target/wasm32-unknown-unknown/release/crud.wasm -o target/wasm32-unknown-unknown/release/crud_opt.wasm shrink"
       ],
       "candid": "candid.did",
-      "wasm": "target/wasm32-unknown-unknown/release/test-sql_opt.wasm",
+      "wasm": "target/wasm32-unknown-unknown/release/crud_opt.wasm",
       "type": "custom"
     }
   },

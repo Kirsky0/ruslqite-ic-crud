@@ -1,11 +1,5 @@
 service : {
-    canister_size: ()->(nat64) query;
-    update_setting: ()->();
-    size: ()->(text);
-
-    page: ()->(bool) query;
-
-    nano_time: ()->(nat64) query;
+    mem_page: ()->(nat64) query;
+    list: ()->(text) query;
     data_add: ()->();
-    data_get: ()->() query;
 }
